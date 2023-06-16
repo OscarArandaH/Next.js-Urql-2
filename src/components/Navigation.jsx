@@ -20,17 +20,17 @@ const links = [
 export function Navigation () {
   return (
     <header>
-      <nav>
-        <ul>
-          {links.map(({ label, route }) => (
-            <li key={route}>
-              <Link href={route}>
-                {label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <div class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        {links.map(({ label, route }) => (
+          <a className=' mr-5' key={route}>
+            <Link href={route}>
+              {label}
+            </Link>
+          </a>
+        ))}
+        </div>
+      </div>
     </header>
   )
 }

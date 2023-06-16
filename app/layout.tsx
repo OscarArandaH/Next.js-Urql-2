@@ -15,14 +15,20 @@ export default function RootLayout({
     <html lang="en">
       <Head />
       <body>
-        <Header />
-        <hr />
-        <Navigation />
-        <hr />
+        <div className='bg-[#00a499] border-black border'>
+          <Header />
+        </div>
+
+        <div className='bg-[#ea7600] border-black border'>
+          <Navigation />
+        </div>
+        
         {children}
-        <hr />
-        <Footer />
-        </body>
+
+        <div className='bg-[#00a499] border-black border'>
+          <Footer />
+        </div>
+      </body>
     </html>
   )
 }
