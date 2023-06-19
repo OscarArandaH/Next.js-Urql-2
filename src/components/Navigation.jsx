@@ -14,6 +14,9 @@ const links = [
     label: 'PDF',
     route: 
     '/pdf'
+  }, {
+    label: 'Excel',
+    route: '/excel'
   }
 ]
 
@@ -25,7 +28,7 @@ export function Navigation () {
           <div className="flex flex-row w-screen bg-[#507482] py-2 pl-2  text-white">
             {
               links.map(({ label, route }) => (
-                <li key={route} class="mr-7" style={{listStyle: 'none'}}>
+                <li key={route} className="mr-7" style={{listStyle: 'none'}}>
                   <Link href={route}>
                     {label}
                   </Link>
