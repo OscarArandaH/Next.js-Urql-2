@@ -8,6 +8,9 @@
 //   </Document>
 // );
 
+const PDFDocument = require('pdfkit');
+const doc = new PDFDocument;
+
 const PDFPage = () => {
   return (
     <div>
