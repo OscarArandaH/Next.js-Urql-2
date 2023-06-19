@@ -20,17 +20,21 @@ const links = [
 export function Navigation () {
   return (
     <header>
-      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <div class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-        {links.map(({ label, route }) => (
-          <a className=' mr-5' key={route}>
-            <Link href={route}>
-              {label}
-            </Link>
-          </a>
-        ))}
+      <nav>
+        <div className='container'>
+          <div className="flex flex-row w-screen bg-[#507482] py-2 pl-2  text-white">
+            {
+              links.map(({ label, route }) => (
+                <li key={route} class="mr-7" style={{listStyle: 'none'}}>
+                  <Link href={route}>
+                    {label}
+                  </Link>
+                </li>
+              ))
+            }
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
   )
 }

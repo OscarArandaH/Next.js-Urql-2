@@ -15,17 +15,14 @@ export default function RootLayout({
     <html lang="en">
       <Head />
       <body>
-        <div className='bg-[#00a499] border-black border'>
+        <div className='object-top'>
           <Header />
         </div>
-
-        <div className='bg-[#ea7600] border-black border'>
-          <Navigation />
+        <Navigation />
+        <div className='object-center'>
+          {children}
         </div>
-        
-        {children}
-
-        <div className='bg-[#00a499] border-black border'>
+        <div className='object-bottom'>
           <Footer />
         </div>
       </body>
