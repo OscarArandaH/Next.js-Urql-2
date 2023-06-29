@@ -22,7 +22,7 @@ export default function RootLayout({
         <div className='object-center'>
           {children}
         </div>
-        <div className='object-bottom'>
+        <div className='object-bottom '>
           <Footer />
         </div>
       </body>
