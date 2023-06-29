@@ -8,11 +8,8 @@ const links = [
     label: 'Home',
     route: '/'
   }, {
-    label: 'Countries',
+    label: 'Paises',
     route: '/countries'
-  }, {
-    label: 'Graficos',
-    route: '/graficos'
   }, {
     label: 'PDF',
     route: 
